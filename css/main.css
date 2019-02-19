@@ -103,6 +103,7 @@ h1 {
 }
 
 #mapid {
+    z-index: 2;
     margin: 0 auto;
     height: 60vh;
     width: 70vw;

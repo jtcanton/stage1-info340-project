@@ -9,7 +9,7 @@ $(document).ready(function () {
         $('#home-content-wrapper').show()
         $('#map-wrapper').hide();
         $('#search-wrapper').hide();
-        $('#about-wrapper').hide();
+        //$('#about-wrapper').hide();
         $('#results-wrapper').hide();
     });
 
@@ -17,7 +17,7 @@ $(document).ready(function () {
         $('#home-content-wrapper').hide()
         $('#map-wrapper').show();
         $('#search-wrapper').hide();
-        $('#about-wrapper').hide();
+        //$('#about-wrapper').hide();
         $('#results-wrapper').hide();
     });
 
@@ -25,7 +25,7 @@ $(document).ready(function () {
         $('#home-content-wrapper').hide()
         $('#map-wrapper').hide();
         $('#search-wrapper').show();
-        $('#about-wrapper').hide();
+        //$('#about-wrapper').hide();
         $('#results-wrapper').hide();
     });
 
@@ -33,7 +33,7 @@ $(document).ready(function () {
         $('#home-content-wrapper').hide()
         $('#map-wrapper').hide();
         $('#search-wrapper').hide();
-        $('#about-wrapper').hide();
+        //$('#about-wrapper').hide();
         $('#results-wrapper').show();
     });
 
