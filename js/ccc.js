@@ -145,10 +145,11 @@ let resultCount = 0;
 
 //populate results
 function populateResults(data) {
-    if(resultCount > 0){
-        document.getElementById('results-wrapper').innerHTML = '';
-        resultCount = 0;
-    }
+    document.getElementById('results-wrapper').innerHTML = '';
+    // if(resultCount > 0){
+    //     document.getElementById('results-wrapper').innerHTML = '';
+    //     resultCount = 0;
+    // }
     for (let i = 0; i < data.length; i++) {
         let el = document.createElement('div');
         el.classList.add('result-div');
