@@ -30,6 +30,7 @@ header {
     width: 100vw;
     overflow: hidden;
     padding: 10px;
+    z-index: 10;
 }
 
 .page-section {
