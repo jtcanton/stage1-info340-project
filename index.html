@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
         integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
         crossorigin="" />
+    <script src="js/leaflet-providers.js"></script>
     <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
         integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
@@ -35,11 +36,13 @@
 
     <div class="wrapper">
 
-        <header>
-            <h1>CITY<br />CULTURE<br />CONNECT</h1>
-        </header>
+        <div class="header-wrap">
+            <header>
+                <h1>CITY<br />CULTURE<br />CONNECT</h1>
+            </header>
+        </div>
 
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-bottom" style="background-color: #008f83;">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-bottom" style="background-color: #252525;">
 
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -87,10 +90,10 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="img/peter-pryharski-700965-unsplash.jpg" class="d-block w-100" alt="...">
+                            <img src="img/chuttersnap-139481-unsplash.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-small-block d-md-block">
                                 <p>Music</p>
-                                <small>Photo by Peter Pryharski on Unsplash</small>
+                                <small>Photo by chuttersnap on Unsplash</small>
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -122,7 +125,8 @@
             </p>
         </div>
 
-        <div class="page-section" id="map-wrapper">MAP
+        <div class="page-section" id="map-wrapper">
+            <h2>Map</h2>
             <div id="mapid"></div>
         </div>
 
@@ -150,7 +154,7 @@
 
                     <label for="exampleFormControlSelect2">Neighborhood:</label>
                     <select class="form-control" id="exampleFormControlSelect2"></select><br />
-                    <button type="button" class="btn btn-primary" id="search-bttn">Search!</button>
+                    <button type="button" class="btn btn-dark" id="search-bttn">Search!</button>
                 </div>
 
             </form>
@@ -162,7 +166,15 @@
             <h2>Make a search to find results!</h2>
         </div>
 
-        <div class="page-section" id="about-wrapper">ABOUT</div>
+        <div class="page-section" id="about-wrapper">
+            <h2>About</h2>
+            <p>This project was created by Joshua Canton, utilizing the Bootstrap web framework,
+                jQuery, and hand written HTML and CSS!</p>
+            <p>If you like this project, feel free to reach out to me via: <address><a
+                        href="jtcanton@gmail.com">EMAIL</a></address>
+            </p>
+
+        </div>
 
 
 

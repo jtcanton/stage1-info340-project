@@ -9,7 +9,7 @@ $(document).ready(function () {
         $('#home-content-wrapper').show()
         $('#map-wrapper').hide();
         $('#search-wrapper').hide();
-        //$('#about-wrapper').hide();
+        $('#about-wrapper').hide();
         $('#results-wrapper').hide();
     });
 
@@ -17,7 +17,7 @@ $(document).ready(function () {
         $('#home-content-wrapper').hide()
         $('#map-wrapper').show();
         $('#search-wrapper').hide();
-        //$('#about-wrapper').hide();
+        $('#about-wrapper').hide();
         $('#results-wrapper').hide();
     });
 
@@ -25,7 +25,7 @@ $(document).ready(function () {
         $('#home-content-wrapper').hide()
         $('#map-wrapper').hide();
         $('#search-wrapper').show();
-        //$('#about-wrapper').hide();
+        $('#about-wrapper').hide();
         $('#results-wrapper').hide();
     });
 
@@ -33,7 +33,7 @@ $(document).ready(function () {
         $('#home-content-wrapper').hide()
         $('#map-wrapper').hide();
         $('#search-wrapper').hide();
-        //$('#about-wrapper').hide();
+        $('#about-wrapper').hide();
         $('#results-wrapper').show();
     });
 
@@ -46,29 +46,21 @@ $(document).ready(function () {
     });
 
 });
-
-
-// function myFunction(x) {
-//     if (x.matches) { // If media query matches
-//       document.getElementsByTagName('nav')[0].classList.remove('fixed-bottom');
-//     } else {
-//       //document.body.style.backgroundColor = "pink";
-//     }
-//   }
-  
-//   var x = window.matchMedia("(max-width: 768px)")
-//   myFunction(x) // Call listener function at run time
-//   x.addListener(myFunction) // Attach listener function on state changes 
+ 
 
 
 //set up the map
 var mymap = L.map('mapid').setView([47.6, -122.33],11);
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    //attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
     id: 'mapbox.streets',
     accessToken: 'pk.eyJ1IjoianRjYW50b24iLCJhIjoiY2pzNm02dWMxMHJ4dTQzcXBlcTd6NmY0dyJ9.oPXri6lR5wETa28eBQzzDw'
 }).addTo(mymap);
+
+
+
+
 
 let API_ENDPOINT = 'https://data.seattle.gov/resource/bsta-72tn.json';
 let neighborhoods = ['Admiral', 'Alki', 'Ballard', 'Beacon Hill', 'Belltown', 'Capitol Hill', 'Central District', 'Chinatown/International District', 'Columbia City', 'Crown Hill', 'Downtown', 'Eastlake', 'Fauntleroy', 'First Hill', 'Fremont', 'Georgetown', 'Green Lake', 'Greenwood', 'Hillman City', 'Interbay', 'International District', 'Lake City', 'Madrona', 'Northgate', 'Pioneer Square', 'Queen Anne', 'Ravenna', 'Seattle Center in Uptown', 'SODO', 'South Lake Union', 'University District', 'Uptown', 'Wallingford', 'West Seattle',];
