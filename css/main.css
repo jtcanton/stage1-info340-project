@@ -40,6 +40,10 @@ header {
     margin: 0 auto;
 }
 
+.carousel-item{
+    z-index: 2;
+}
+
 .carousel-caption{
     z-index: 2;
 }
